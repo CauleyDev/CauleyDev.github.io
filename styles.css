@@ -1,0 +1,257 @@
+body {
+	background:black;
+}
+
+.bg {
+	
+	background-image: url("images/mountains2.jpg");
+	height: 100%;
+	width: 100%;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+h1 {
+	color: white;
+	font-family: Lato;
+	font-weight: 300;
+
+}
+
+p {
+	color:white;
+	font-family:Lato;
+}
+
+h2 {
+	color: white;
+	font-family: Lato;
+	font-weight: 300;
+	font-size: 48px;
+
+}
+
+@media screen and (min-width: 701px) {
+	h1 {
+		font-size: 7em;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	h1 {
+		font-size: 5em;
+	}
+}
+
+table {
+	color: white;
+	font-family: Lato;
+	border: 0;
+}
+
+.table-borderless td,
+.table-borderless th {
+    border: 0;
+}
+
+#menu {
+	color: white;
+	font-family: Lato;
+	border: 0;
+	font-size: 1.3em;
+	font-weight:300;
+}
+
+a {
+	color:white;
+}
+
+a:hover {
+	color:grey;
+	text-decoration: none;
+}
+
+hr.style-two {
+	color:white;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    width:500px;
+}
+
+.btn-2 {
+    letter-spacing: 0;
+}
+
+.btn-2:hover,
+.btn-2:active {
+  letter-spacing: 3px;
+}
+
+.btn-2:after,
+.btn-2:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(#fff, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 2000ms ease-in-out;
+  transition: letter-spacing 2000ms ease-in-out;
+  width: 0;
+}
+
+.btn-2:hover:after,
+.btn-2:hover:before {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 2000ms ease-in-out;
+  width: 70%;
+}
+
+.btn-2:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+
+#outer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding-bottom: 100px;
+}
+
+#inner {
+  margin: auto;
+}
+
+.smoothbtn {
+ letter-spacing: 1px;
+ transition: all .1s ease-in;
+}
+.smoothbtn:hover {
+ letter-spacing: 0.2em;
+}
+
+#logoimg {
+	height:25%;
+	width: 25%;
+}
+
+.bulge{animation:slide-fwd-center 1s ease-in-out infinite alternate-reverse both}
+
+@keyframes bulge{0%{transform:translateZ(0)}100%{transform:translateZ(160px)}}
+
+.fade-in {
+	animation: fade-in 3s both;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-2 {
+	animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+}
+
+@keyframes fade-in-2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-btn {
+	animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.3s both;
+}
+
+@keyframes fade-in-2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-btn2 {
+	animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.6s both;
+}
+
+@keyframes fade-in-2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-btn3 {
+	animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.9s both;
+}
+
+@keyframes fade-in-2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.mcbg {
+
+	background:rgba(0,0,0, 0.4);
+	border-radius:15px;
+	padding:16px;
+	
+}
+
+.imgresize {
+
+	width:250px;
+	height:250px;
+
+}
+
+/* [1] The container */
+.img-hover-zoom {
+  height: 300px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.9);
+}
+
+.name {
+	color: white;
+	font-weight: 700;
+}
+
+.toplogo {
+	width:100px;
+	height:65px;
+}
+
+#copy {
+	color: rgba(0,0,0,0.2);
+}
